@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Aboutusend from '../Components/AboutUS/Aboutusend'
 import Aboutusmain from '../Components/AboutUS/Aboutusmain'
 import Aboutustag from '../Components/AboutUS/Aboutustag'
 
@@ -35,6 +36,9 @@ export default function About() {
                 </div>
                 <div className="row">
                     <Aboutusmain />
+                </div>
+                <div className="row">
+                    <Aboutusend />
                 </div>
 
             </div>

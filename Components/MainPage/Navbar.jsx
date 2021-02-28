@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import styles from '../../styles/Nav.module.css'
 import MenuIcon from '@material-ui/icons/Menu';
 
@@ -7,9 +8,9 @@ const Navbar = () => {
         <>
             <div className="d-none d-lg-block">
                 <div className={styles.container}>
-                    <p className={styles.navlink}>ABOUT US</p>
-                    <p className={styles.navlink}>WORK</p>
-                    <p className={styles.navlink}>CONTACT US</p>
+                    <Link href='/about'><p className={styles.navlink}>ABOUT US</p></Link>
+                    <Link href='/work'><p className={styles.navlink}>WORK</p></Link>
+                    <Link href='/contactus'><p className={styles.navlink}>CONTACT US</p></Link>
                 </div>
             </div>
             <div className="d-md-none">

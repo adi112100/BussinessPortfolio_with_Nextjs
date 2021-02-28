@@ -25,7 +25,7 @@ const LeftSideBar = () => {
             setTimeout(() => {
                 setCount(1)
             }, 5000)
-
+            
             setTimeout(() => {
                 document.getElementById('introvideo').play()
                 document.getElementById('introvideo1').play()
