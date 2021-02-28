@@ -57,14 +57,19 @@ const Navbar = () => {
                                                 display: 'flex',
                                                 flexDirection: 'column',
                                                 alignItems: 'center',
-                                                padding: '20px'
+                                                padding: '20px',
+                                                color:'white',
+                                                fontSize: '6vw',
+                                                fontWeight: '500'
+                                                
+                                            
 
 
                                             }}
                                             >
-                                                <Link href='/about'><p className={styles.navlink}>ABOUT US</p></Link>
-                                                <Link href='/work'><p className={styles.navlink}>WORK</p></Link>
-                                                <Link href='/contactus'><p className={styles.navlink}>CONTACT US</p></Link>
+                                                <Link href='/about'><p>ABOUT US</p></Link>
+                                                <Link href='/work'><p>WORK</p></Link>
+                                                <Link href='/contactus'><p>CONTACT US</p></Link>
                                             </div>
                                         </div>
 
