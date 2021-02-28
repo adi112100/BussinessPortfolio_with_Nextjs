@@ -34,7 +34,7 @@ const Navbar = () => {
                     <Link href='/contactus'><p className={styles.navlink}>CONTACT US</p></Link>
                 </div>
             </div>
-            <div className="d-md-none">
+            <div className="d-lg-none">
                 <div className={styles.hamburger}>
                     <div style={{ cursor: 'pointer' }} onClick={() => togglevalue()}>
                         {
