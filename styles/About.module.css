@@ -1,0 +1,145 @@
+/* About us main */
+
+.container{
+    background-color: #ffa83d;
+}
+
+.aboutustag{
+    height:70vh;
+    width: 100%;
+}
+
+.tag{
+    margin-top: 15vh;
+    text-align: center;
+    color: white;
+    font-size: ;
+}
+
+@media screen and (min-width: 760px) {
+    .tag{
+        font-size: 3vw;
+        font-weight: 600;
+        margin-right: 12vw;
+        margin-left: 12vw;
+    }
+    
+}
+
+@media screen and (max-width: 760px) {
+
+    .tag{
+        font-size: 4.5vw;
+        font-weight: 600;
+        margin-right: 5vw;
+        margin-left: 5vw;
+    }
+
+}
+
+
+/* About us main */
+.aboutustitle{
+    color: black;
+    position: absolute;
+    left: 2vw;
+}
+
+.aboutusmain{
+    margin-left: 1vw;
+    margin-right: 1vw;
+    background-color: white;
+    min-height: 100vw;
+    border-radius: 50px 50px 0px 0px;
+    padding: 50px;
+}
+
+.aboutusmain img{
+    border-radius: 50px;
+    width: 100%;
+    
+}
+
+.aboutusmid{
+    margin-top: 100px;
+    
+}
+
+.aboutusmid img{
+    width: 80%;
+    
+}
+
+.iconalign{
+    margin-top: 30px;
+    color: #3F3D56;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.cardalign{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.profilealign{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+
+@media screen and (min-width: 1000px) {
+    .aboutustitle{
+        font-size: 3.5vw;
+        font-weight: 700;
+        bottom: 30vh;
+
+    }
+
+    .iconalign{
+        font-size: 4vw;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .aboutustitle{
+        font-size: 5vw;
+        font-weight: 700;
+        bottom: 33vh;
+
+    }
+
+    .iconalign{
+        font-size: 6vw;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    
+    .aboutustitle{
+        font-size: 10vw;
+        font-weight: 720;
+        bottom: 25vh;
+        left: 5vw;
+    }
+
+    .aboutusmain{
+        padding: 0px;
+    }
+
+    .iconalign{
+        font-size: 7vw;
+    }
+
+    
+
+}
+
+

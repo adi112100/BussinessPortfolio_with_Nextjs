@@ -1,0 +1,35 @@
+.container{
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+    font-size: larger;
+    font-weight: 750;
+    z-index: 1;
+    
+}
+
+.navlink {
+   
+    color: rgb(255, 255, 255);
+    background: linear-gradient(to right, black, black 50%, white 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+    text-decoration: none;
+}
+.navlink:hover {
+    background-position: 0 100%;
+}
+
+.hamburger {
+    margin: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+}
