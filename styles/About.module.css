@@ -98,7 +98,7 @@
 
 
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1200px) {
     .aboutustitle{
         font-size: 3.5vw;
         font-weight: 700;
@@ -111,7 +111,7 @@
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 760px) {
     .aboutustitle{
         font-size: 5vw;
         font-weight: 700;

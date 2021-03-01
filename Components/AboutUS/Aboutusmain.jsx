@@ -1,6 +1,7 @@
 import React from 'react'
 
 import styles from '../../styles/About.module.css'
+import animation from '../../styles/Animation.module.css'
 
 import { fadeInUp, fadeInLeft } from 'react-animations';
 import Radium, { StyleRoot } from 'radium';
@@ -34,7 +35,7 @@ const Aboutusmain = () => {
                 <div className={`container ${styles.aboutusmid}`}>
                     <div className="row" >
                         <div className="col-12 col-md-6 d-none d-md-block">
-                            <img src='/Media/aboutus2.svg' />
+                            <img src='/Media/aboutus2.svg' className={animation.svgtranslate}/>
                         </div>
                         <div className="col-12 col-md-6 align-middle shadow " style={{ textAlign: 'left', padding: '15px', borderRadius: '50px' }}>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque minus recusandae dolores nulla! Magni quae consequatur,
@@ -48,7 +49,7 @@ const Aboutusmain = () => {
                             tenetur, odio voluptas nostrum autem reprehenderit ad delectus dolorem consectetur! Quia similique cumque maiores!
                         </div>
                         <div className="col-12 col-md-6 d-none d-md-block">
-                            <img src='/Media/aboutus3.svg' />
+                            <img src='/Media/aboutus3.svg' className={animation.svgtranslate}/>
                         </div>
                     </div>
                     <br /><br /><br />

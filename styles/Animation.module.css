@@ -45,3 +45,13 @@
     from, to { border-color: transparent }
     50% { border-color: rgb(27, 18, 0) }
   }
+
+  .svgtranslate {
+    animation: svg 0.7s ease-in-out alternate-reverse infinite;
+    position: relative;
+  }
+
+  @keyframes svg {
+    from { transform: scale(0.98) }
+    to { transform: scale(1.02) }
+  }
