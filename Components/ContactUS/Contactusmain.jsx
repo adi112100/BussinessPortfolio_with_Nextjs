@@ -6,6 +6,7 @@ import animation from '../../styles/Animation.module.css'
 
 import { fadeInUp, fadeInLeft, fadeInUpBig } from 'react-animations';
 import Radium, { StyleRoot } from 'radium';
+import Contactusform from './Contactusform';
 
 
 
@@ -46,6 +47,15 @@ const Contactusmain = () => {
                             <h5 style={{ color: '#ffa83d' }}>Nest Collective Downtown Rua da Sota 2A
                             3000-392 Coimbra Portugal</h5>
                         </div>
+                    </div>
+                </div>
+                <br /><br /><br />
+                <div className="row shadow-lg align-items-center" style={{ borderRadius: '50px', padding: '25px', justifyContent:'center'}}>
+                    <div className="col-md-5 col-lg-4 d-none d-md-block">
+                        <img src='Media/contactsvg.svg' style={{width:'100%'}} />
+                    </div>
+                    <div className="col-12 col-md-7 col-lg-8">
+                        <Contactusform />
                     </div>
                 </div>
                 <br /><br /><br />
