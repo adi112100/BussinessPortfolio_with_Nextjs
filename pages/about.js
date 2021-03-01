@@ -13,7 +13,7 @@ export default function About() {
     return (
         <div className={styles.container}>
             <Head>
-                <title>MainPage</title>
+                <title>About-us</title>
                 <link rel="icon" href="/favicon.ico" />
 
             </Head>

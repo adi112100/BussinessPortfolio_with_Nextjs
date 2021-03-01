@@ -29,7 +29,10 @@ const Aboutusmain = () => {
         <StyleRoot>
             <div className={styles.aboutustitle} style={animstyles.fadeInLeft}>About Us</div>
             <div className={styles.aboutusmain} style={animstyles.fadeInUp}>
-                <img src='/Media/aboutus1.jpg' />
+                <div style={{overflow:'hidden'}}>
+                <img className={animation.imagehover_long} src='/Media/aboutus1.jpg' />
+                </div>
+               
 
 
                 <div className={`container ${styles.aboutusmid}`}>

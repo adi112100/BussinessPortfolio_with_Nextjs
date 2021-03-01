@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import Link from 'next/link'
-import styles from '../../styles/Nav.module.css'
+import Link from 'next/link';
+import styles from '../../styles/Nav.module.css';
 import MenuIcon from '@material-ui/icons/Menu';
 import ClearIcon from '@material-ui/icons/Clear';
 
 import { fadeIn } from 'react-animations';
 import Radium, { StyleRoot } from 'radium';
-import zIndex from '@material-ui/core/styles/zIndex';
+
 
 const Navbar = () => {
     const animstyles = {
