@@ -5,6 +5,8 @@ import animation from '../../styles/Animation.module.css'
 
 import { fadeInUp, fadeInLeft } from 'react-animations';
 import Radium, { StyleRoot } from 'radium';
+import Fade from 'react-reveal/Fade';
+
 import AboutusCarousel from './AboutusCarousel';
 import AboutusCard from './AboutusCard';
 import AboutusProfile from './AboutusProfile';
@@ -29,17 +31,19 @@ const Aboutusmain = () => {
         <StyleRoot>
             <div className={styles.aboutustitle} style={animstyles.fadeInLeft}>About Us</div>
             <div className={styles.aboutusmain} style={animstyles.fadeInUp}>
-                <div style={{overflow:'hidden'}}>
-                <img className={animation.imagehover_long} src='/Media/aboutus1.jpg' />
+                <div style={{ overflow: 'hidden', borderRadius:'50px'}}>
+                    <img className={animation.imagehover_long} src='/Media/aboutus1.jpg' />
                 </div>
-               
+
 
 
                 <div className={`container ${styles.aboutusmid}`}>
                     <div className="row" >
-                        <div className="col-12 col-md-6 d-none d-md-block">
-                            <img src='/Media/aboutus2.svg' className={animation.svgtranslate}/>
-                        </div>
+                        <Fade left>
+                            <div className="col-12 col-md-6 d-none d-md-block">
+                                <img src='/Media/aboutus2.svg' className={animation.svgtranslate} />
+                            </div>
+                        </Fade>
                         <div className="col-12 col-md-6 align-middle shadow " style={{ textAlign: 'left', padding: '15px', borderRadius: '50px' }}>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque minus recusandae dolores nulla! Magni quae consequatur,
                             tenetur, odio voluptas nostrum autem reprehenderit ad delectus dolorem consectetur! Quia similique cumque maiores!
@@ -51,23 +55,27 @@ const Aboutusmain = () => {
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque minus recusandae dolores nulla! Magni quae consequatur,
                             tenetur, odio voluptas nostrum autem reprehenderit ad delectus dolorem consectetur! Quia similique cumque maiores!
                         </div>
-                        <div className="col-12 col-md-6 d-none d-md-block">
-                            <img src='/Media/aboutus3.svg' className={animation.svgtranslate}/>
-                        </div>
+                        <Fade right>
+                            <div className="col-12 col-md-6 d-none d-md-block">
+                                <img src='/Media/aboutus3.svg' className={animation.svgtranslate} />
+                            </div>
+                        </Fade>
                     </div>
                     <br /><br /><br />
                     <div className="row" >
                         <h1 style={{ textAlign: 'center', color: '#FF9600' }}>We think and speak javascript, python or any language you really need. </h1>
-                        <div className="col-12">
-                            <div className={styles.iconalign}>
-                                <FontAwesomeIcon icon={faPython} />
-                                <FontAwesomeIcon icon={faNode} />
-                                <FontAwesomeIcon icon={faReact} />
-                                <FontAwesomeIcon icon={faAws} />
-                                <FontAwesomeIcon icon={faJs} />
-                                
+                        <Fade bottom>
+                            <div className="col-12">
+                                <div className={styles.iconalign}>
+                                    <FontAwesomeIcon icon={faPython} />
+                                    <FontAwesomeIcon icon={faNode} />
+                                    <FontAwesomeIcon icon={faReact} />
+                                    <FontAwesomeIcon icon={faAws} />
+                                    <FontAwesomeIcon icon={faJs} />
+
+                                </div>
                             </div>
-                        </div>
+                        </Fade>
                     </div>
                     <br /><br /><br />
                     <div className="row">

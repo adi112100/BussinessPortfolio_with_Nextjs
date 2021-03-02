@@ -28,7 +28,7 @@ const LeftSideBar = () => {
             
             setTimeout(() => {
                 document.getElementById('introvideo').play()
-                document.getElementById('introvideo1').play()
+                // document.getElementById('introvideo1').play()
             }, 1500)
         }
 
@@ -54,10 +54,13 @@ const LeftSideBar = () => {
             <div className="d-lg-none">
                 <StyleRoot>
                     <div className={styles.mobvideo} style={animstyles.fadeInUp}>
-                        <video autoPlay loop muted >
+                        {/* <video autoPlay loop muted >
                             <source src='/Media/home1.mp4' type="video/mp4" />
                         </video>
                         <video id='introvideo1' muted className={count && styles.hideprop}>
+                            <source src='/Media/home1intro.mp4' type="video/mp4" />
+                        </video> */}
+                        <video autoPlay muted>
                             <source src='/Media/home1intro.mp4' type="video/mp4" />
                         </video>
                     </div>

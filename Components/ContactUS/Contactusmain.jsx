@@ -6,6 +6,8 @@ import animation from '../../styles/Animation.module.css'
 
 import { fadeInUp, fadeInLeft, fadeInUpBig } from 'react-animations';
 import Radium, { StyleRoot } from 'radium';
+import Fade from 'react-reveal/Fade';
+
 import Contactusform from './Contactusform';
 
 
@@ -33,7 +35,10 @@ const Contactusmain = () => {
 
             <div className={styles.contactusmain} style={animstyles.fadeInUp}>
                 <div className={styles.contactimage} style={animstyles.fadeInUpBig}>
-                    <img src="Media/contact1.jpg" className='shadow-lg' alt="" />
+                    <div style={{overflow:'hidden', borderRadius:'50px'}}>
+                        <img src="Media/contact1.jpg" className={`shadow-lg ${animation.imagehover_long}`} alt="" />
+                    </div>
+                    
                 </div>
                 <br /><br /><br />
                 <div className="container">
@@ -44,16 +49,19 @@ const Contactusmain = () => {
                         </div>
                         <div className="col-12 col-md-6">
                             <h2>Address</h2>
-                            <h5 style={{ color: '#ffa83d' }}>Nest Collective Downtown Rua da Sota 2A
+                            <h5 style={{ color: '#ffa83d' }}>Nest Collective Downtown <br />Rua da Sota 2A<br />
                             3000-392 Coimbra Portugal</h5>
                         </div>
                     </div>
                 </div>
                 <br /><br /><br />
-                <div className="row shadow-lg align-items-center" style={{ borderRadius: '50px', padding: '25px', justifyContent:'center'}}>
-                    <div className="col-md-5 col-lg-4 d-none d-md-block">
-                        <img src='Media/contactsvg.svg' style={{width:'100%'}} />
-                    </div>
+                <div className="row shadow-lg align-items-center" style={{ borderRadius: '50px', padding: '25px', justifyContent: 'center' }}>
+                    <Fade left>
+                        <div className="col-md-5 col-lg-4 d-none d-md-block">
+                            <img src='Media/contactsvg.svg' style={{ width: '100%' }} />
+                        </div>
+                    </Fade>
+
                     <div className="col-12 col-md-7 col-lg-8">
                         <Contactusform />
                     </div>
