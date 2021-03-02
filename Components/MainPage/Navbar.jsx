@@ -4,17 +4,18 @@ import styles from '../../styles/Nav.module.css';
 import MenuIcon from '@material-ui/icons/Menu';
 import ClearIcon from '@material-ui/icons/Clear';
 
-import { fadeIn } from 'react-animations';
-import Radium, { StyleRoot } from 'radium';
-
+// import { fadeIn } from 'react-animations';
+// import Radium, { StyleRoot } from 'radium';
+import Fade from 'react-reveal/Fade';
+import Flip from 'react-reveal/Flip';
 
 const Navbar = () => {
-    const animstyles = {
-        fadeIn: {
-            animation: 'x 0.8s',
-            animationName: Radium.keyframes(fadeIn, 'fadeIn')
-        }
-    }
+    // const animstyles = {
+    //     fadeIn: {
+    //         animation: 'x 0.8s',
+    //         animationName: Radium.keyframes(fadeIn, 'fadeIn')
+    //     }
+    // }
 
     const [toggle, setToggle] = useState(0);
 
@@ -41,16 +42,17 @@ const Navbar = () => {
                             toggle ?
                                 <>
                                     <ClearIcon fontSize="large" />
-                                    <StyleRoot>
-                                        <div style={animstyles.fadeIn}>
-
+                                    {/* <StyleRoot> */}
+                                    {/* <div style={animstyles.fadeIn}> */}
+                                    <div>
+                                        <Flip right>
                                             <div style={{
                                                 position: 'absolute',
                                                 top: '15vh',
-                                                left: '0px',
-                                                height: '100%',
-                                                width: '100%',
-                                                zIndex: 1,
+                                                left: '10vw',
+                                                height: '85vh',
+                                                width: '80vw',
+                                                zIndex: 2,
                                                 backgroundColor: 'rgba(0,0,0,0.9)',
                                                 borderTopLeftRadius: '35px',
                                                 borderTopRightRadius: '35px',
@@ -58,22 +60,25 @@ const Navbar = () => {
                                                 flexDirection: 'column',
                                                 alignItems: 'center',
                                                 padding: '20px',
-                                                color:'white',
+                                                color: 'white',
                                                 fontSize: '6vw',
                                                 fontWeight: '500'
-                                                
-                                            
+
+
 
 
                                             }}
                                             >
-                                                <Link href='/about'><p>ABOUT US</p></Link>
-                                                <Link href='/work'><p>WORK</p></Link>
-                                                <Link href='/contactus'><p>CONTACT US</p></Link>
+                                                <Fade left>
+                                                    <Link href='/about'><p>ABOUT US</p></Link>
+                                                    <Link href='/work'><p>WORK</p></Link>
+                                                    <Link href='/contactus'><p>CONTACT US</p></Link>
+                                                </Fade>
                                             </div>
-                                        </div>
+                                        </Flip>
+                                    </div>
 
-                                    </StyleRoot>
+                                    {/* </StyleRoot> */}
 
                                 </>
                                 :

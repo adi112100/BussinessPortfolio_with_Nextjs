@@ -1,0 +1,41 @@
+.container{
+    background-color: #392f94;
+}
+
+.title{
+    color: white;
+    margin: 20px 15px 20px 15px;
+    position: absolute;
+    top: 0px;
+    z-index: 10;
+  
+  }
+
+.workhead{
+    margin: 20px 0px 0px 0px;
+}
+
+.workvideo{
+    width: 100%;
+    border-radius: 50px;
+}
+
+.workheadtitle{
+    color:white;
+    position: absolute;
+    top: 15vmax;
+    left: 5vw;
+    z-index: 1;
+    
+}
+
+.workheadtitle h1{
+    font-size: 3vmax;
+    font-weight: 630;
+}
+
+.workheadtitle h5{
+    margin-top: 20px;
+    font-size: 1vmax;
+    color: #6610f2;
+}
