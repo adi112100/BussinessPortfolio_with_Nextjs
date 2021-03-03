@@ -31,7 +31,7 @@ const Aboutusmain = () => {
         <StyleRoot>
             <div className={styles.aboutustitle} style={animstyles.fadeInLeft}>About Us</div>
             <div className={styles.aboutusmain} style={animstyles.fadeInUp}>
-                <div style={{ overflow: 'hidden', borderRadius:'50px'}}>
+                <div style={{ overflow: 'hidden', borderRadius: '50px' }}>
                     <img className={animation.imagehover_long} src='/Media/aboutus1.jpg' />
                 </div>
 
@@ -61,7 +61,7 @@ const Aboutusmain = () => {
                             </div>
                         </Fade>
                     </div>
-                    <br /><br /><br />
+                    <div style={{marginTop:'20vh'}}></div>
                     <div className="row" >
                         <h1 style={{ textAlign: 'center', color: '#FF9600' }}>We think and speak javascript, python or any language you really need. </h1>
                         <Fade bottom>
@@ -84,43 +84,46 @@ const Aboutusmain = () => {
                     <br /><br /><br />
                     <div className="row">
                         <div className={styles.cardalign}>
-                            <AboutusCard title='UI/UX design'
-                                body='Don’t rely on imagination only. We can picture your product before it comes to life.'
-                                path='Media/card1.svg' />
-                            <AboutusCard title='Server Deployment and DevOps'
-                                body='Don’t rely on imagination only. We can picture your product before it comes to life.'
-                                path='Media/card2.svg' />
-                            <AboutusCard title='Software Engineering'
-                                body='Don’t rely on imagination only. We can picture your product before it comes to life.'
-                                path='Media/card3.svg' />
+                            <Fade bottom>
+                                <AboutusCard title='UI/UX design'
+                                    body='Don’t rely on imagination only. We can picture your product before it comes to life.'
+                                    path='Media/card1.svg' />
+                                <AboutusCard title='Server Deployment and DevOps'
+                                    body='Don’t rely on imagination only. We can picture your product before it comes to life.'
+                                    path='Media/card2.svg' />
+                                <AboutusCard title='Software Engineering'
+                                    body='Don’t rely on imagination only. We can picture your product before it comes to life.'
+                                    path='Media/card3.svg' />
+                            </Fade>
                         </div>
                     </div>
                     <br /><br /><br />
                     <div className="row">
                         <h1 style={{ textAlign: 'center', color: '#FF9600' }}>Our Team</h1>
-
-                        <div className={styles.profilealign} >
-                            <AboutusProfile
-                                name='Mr X'
-                                title='CEO and Co-Founder'
-                                body='ceo of xyz company.'
-                                path='Media/profile1.jpg' />
-                            <AboutusProfile
-                                name='Mr X'
-                                title='CEO and Co-Founder'
-                                body='ceo of xyz company.'
-                                path='Media/profile1.jpg' />
-                            <AboutusProfile
-                                name='Mr X'
-                                title='CEO and Co-Founder'
-                                body='ceo of xyz company.'
-                                path='Media/profile1.jpg' />
-                            <AboutusProfile
-                                name='Mr X'
-                                title='CEO and Co-Founder'
-                                body='ceo of xyz company.'
-                                path='Media/profile1.jpg' />
-                        </div>
+                        <Fade>
+                            <div className={styles.profilealign} >
+                                <AboutusProfile
+                                    name='Mr X'
+                                    title='CEO and Co-Founder'
+                                    body='ceo of xyz company.'
+                                    path='Media/profile1.jpg' />
+                                <AboutusProfile
+                                    name='Mr X'
+                                    title='CEO and Co-Founder'
+                                    body='ceo of xyz company.'
+                                    path='Media/profile1.jpg' />
+                                <AboutusProfile
+                                    name='Mr X'
+                                    title='CEO and Co-Founder'
+                                    body='ceo of xyz company.'
+                                    path='Media/profile1.jpg' />
+                                <AboutusProfile
+                                    name='Mr X'
+                                    title='CEO and Co-Founder'
+                                    body='ceo of xyz company.'
+                                    path='Media/profile1.jpg' />
+                            </div>
+                        </Fade>
 
                     </div>
 

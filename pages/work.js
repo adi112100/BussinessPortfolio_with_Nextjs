@@ -27,10 +27,9 @@ export default function Home() {
       </div>
 
       <div className="container-fluid">
-        <div className="row">
-          <div className="col-12" style={{padding:0}}>
-            <WorkHead />
-          </div>
+        <div className="row ">
+          <WorkHead />
+
 
         </div>
       </div>

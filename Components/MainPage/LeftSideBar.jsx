@@ -11,7 +11,7 @@ const LeftSideBar = () => {
 
     const animstyles = {
         fadeInUp: {
-            animation: 'x 1s',
+            animation: 'x 2s',
             animationName: Radium.keyframes(fadeInUp, 'fadeInUp')
         }
     }

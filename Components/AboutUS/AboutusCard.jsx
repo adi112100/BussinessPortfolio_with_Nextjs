@@ -1,12 +1,13 @@
 import React from 'react'
 
 import animation from '../../styles/Animation.module.css'
+import styles from '../../styles/Card.module.css'
 
 const AboutusCard = ({title, body, path}) => {
     
     return (
         
-            <div className="card shadow" style={{width:'350px', borderRadius:'50px', margin:'10px 0px 10px 0px', overflow:'hidden', textAlign:'center'}}>
+            <div className={`card shadow ${styles.aboutuscard}`}>
                 <img src={path} style={{width:'100%'}} className={`card-img-top shadow ${animation.imagehover}`} alt="..." />
                 <br/>
                 <div className="card-body">

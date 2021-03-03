@@ -13,19 +13,24 @@
 
 .workhead{
     margin: 20px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
 }
 
 .workvideo{
-    width: 100%;
-    border-radius: 50px;
+    max-width: 100%;
 }
+
 
 .workheadtitle{
     color:white;
-    position: absolute;
-    top: 15vmax;
-    left: 5vw;
     z-index: 1;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    height: 100%;
     
 }
 
@@ -37,5 +42,6 @@
 .workheadtitle h5{
     margin-top: 20px;
     font-size: 1vmax;
-    color: #6610f2;
+    color: #cebaee;
 }
+

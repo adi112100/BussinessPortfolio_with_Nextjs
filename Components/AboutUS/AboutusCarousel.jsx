@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import styles from '../../styles/About.module.css'
 
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
@@ -6,6 +6,11 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // import 'swiper/swiper.scss';
 SwiperCore.use([Navigation, Pagination, A11y]);
 const AboutusCarousel = () => {
+    const [x, setx] = useState(1)
+    useEffect(()=> {
+        if (window.innerWidth > 800) setx(2)
+    }, [])
+
     return (
         // <div className={styles.carousel}>
         //     <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
@@ -25,7 +30,7 @@ const AboutusCarousel = () => {
 
         <Swiper
             spaceBetween={1}
-            slidesPerView={2}
+            slidesPerView={x}
             navigation
             pagination={{ clickable: true }}
             
