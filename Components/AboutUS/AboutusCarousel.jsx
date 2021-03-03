@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from 'react'
-import styles from '../../styles/About.module.css'
 
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';

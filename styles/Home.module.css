@@ -88,4 +88,76 @@
 
 .rightsidebar{
   margin-left: 10px;
+  display: flex;
+  align-items: center;
+  height: 70vh;
+  
+}
+
+.rightsidecontent{
+  height: 500px;
+  width: 100%;
+  overflow: hidden;
+  
+
+}
+
+.rightsidecontent h1{
+  font-weight: 620;
+  color: white;
+  font-size: 65px;
+  margin: 500px 0px 500px 0px;
+}
+
+@media (min-width:2000px) {
+  .rightsidecontent h1{
+    font-size: 75px;
+  }
+}
+
+@media (min-width:1000px) and (max-width:1600px) {
+  .rightsidecontent h1{
+    font-size: 51px;
+  }
+}
+
+.navlink_rightside {
+   
+  color: rgb(255, 255, 255);
+  background: linear-gradient(to right, black, black 50%, white 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
+  text-decoration: none;
+  cursor: pointer;
+}
+.navlink_rightside:hover {
+  background-position: 0 100%;
+}
+
+.rightsidefooter{
+  position: absolute;
+  bottom: 50px;
+  color: white;
+  padding-left: 50px;
+}
+.rightsidefooter h4{
+  margin: 0px;
+  padding: 0px;
+}
+
+.rightsidelinks{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 40px;
+  bottom: 5vh;
+  font-size: 50px;
+  justify-content: space-evenly;
+  height: 40vh;
+  color: white;
+  cursor: pointer;
 }

@@ -5,6 +5,7 @@ import styles from '../styles/Work.module.css'
 import Navbar from '../Components/MainPage/Navbar'
 import WorkTitle from '../Components/Work/WorkTitle'
 import WorkHead from '../Components/Work/WorkHead'
+import Workmain from '../Components/Work/Workmain'
 
 export default function Home() {
   return (
@@ -29,8 +30,9 @@ export default function Home() {
       <div className="container-fluid">
         <div className="row ">
           <WorkHead />
-
-
+        </div>
+        <div className="row">
+          <Workmain />
         </div>
       </div>
 

@@ -45,3 +45,53 @@
     color: #cebaee;
 }
 
+
+.worktitle{
+    text-align: center;
+    color: white;
+}
+
+.worktitle span{
+    font-size: 20px;
+
+}
+
+
+@media (min-width:1200px) {
+    
+    .worktitle{
+        font-size: 4vw;
+        font-weight: 620;
+    }
+}
+
+
+@media (max-width:1200px) and (min-width:700px) {
+    
+    .worktitle{
+        font-size: 5.5vw;
+        font-weight: 620;
+    }
+}
+
+@media (max-width:700px) and (min-width:0px) {
+    
+    .worktitle{
+        font-size: 10vw;
+        font-weight: 620;
+    }
+
+    .worktitle span{
+        font-size: small;
+    }
+}
+
+
+/* work template container */
+
+.worktemplate_container{
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    background-color: white;
+}
