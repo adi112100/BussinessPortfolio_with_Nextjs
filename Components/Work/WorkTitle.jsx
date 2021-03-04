@@ -5,10 +5,10 @@ import styles from '../../styles/Work.module.css'
 import animation from '../../styles/Animation.module.css'
 
 const WorkTitle = () => {
-    const msg = "<Hi Welcome to RedLight!!>"
+    const msg = "<Hi Welcome to My PAge!!>"
     return (
         <div className={styles.title}>
-            <Link href='/'><h1 style={{cursor:'pointer'}}>Redlight</h1></Link>
+            <Link href='/'><h1 style={{cursor:'pointer'}}>Harshit Sahu</h1></Link>
             <div className={animation.typewriter_long}>
                 {msg}
             </div>

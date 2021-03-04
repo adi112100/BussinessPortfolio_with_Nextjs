@@ -48,7 +48,7 @@ const RightSideBar = () => {
                 <Fade top>
                     <div className={styles.rightsidefooter}>
                         <h4>hi@</h4>
-                        <h4>fullstack.dev</h4>
+                        <h4>harshit.dev</h4>
                     </div>
                 </Fade>
                 <Fade right>
