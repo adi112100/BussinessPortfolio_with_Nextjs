@@ -53,10 +53,10 @@ const RightSideBar = () => {
                 </Fade>
                 <Fade right>
                     <div className={styles.rightsidelinks}>
-                        <Link href='/about'><FontAwesomeIcon icon={faFacebook} /></Link>
-                        <Link href='/about'><FontAwesomeIcon icon={faInstagram} /></Link>
-                        <Link href='/about'><FontAwesomeIcon icon={faLinkedin} /></Link>
-                        <Link href='/about'><FontAwesomeIcon icon={faTwitter} /></Link>
+                        <a href='/' ><FontAwesomeIcon icon={faFacebook} /></a>
+                        <a href='/' ><FontAwesomeIcon icon={faInstagram} /></a>
+                        <a href='/' ><FontAwesomeIcon icon={faLinkedin} /></a>
+                        <a href='/' ><FontAwesomeIcon icon={faTwitter} /></a>
                     </div>
                 </Fade>
             </div>

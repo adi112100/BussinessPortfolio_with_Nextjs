@@ -41,7 +41,7 @@
   top: 0px;
   left: 0px;
   height: 100%;
-  width: 50%;
+  width: 55%;
   z-index: 0;
   padding: 0px;
 }
@@ -130,7 +130,7 @@
   -webkit-text-fill-color: transparent;
   background-size: 200% 100%;
   background-position: 100%;
-  transition: background-position 275ms ease;
+  transition: background-position 350ms ease-in-out;
   text-decoration: none;
   cursor: pointer;
 }
@@ -142,7 +142,7 @@
   position: absolute;
   bottom: 50px;
   color: white;
-  padding-left: 50px;
+  padding-left: 0px;
 }
 .rightsidefooter h4{
   margin: 0px;
@@ -154,10 +154,20 @@
   flex-direction: column;
   position: absolute;
   right: 40px;
-  bottom: 5vh;
-  font-size: 50px;
+  bottom: 3vh;
+  font-size: 40px;
   justify-content: space-evenly;
-  height: 40vh;
+  height: 35vh;
   color: white;
   cursor: pointer;
+}
+
+.rightsidelinks a{
+  color: white;
+}
+
+.rightsidelinks a:hover{
+  color: #343a40;
+  transform: scale(1.2);
+  transition-duration: 200ms;
 }

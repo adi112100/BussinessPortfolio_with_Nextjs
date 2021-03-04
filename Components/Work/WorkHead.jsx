@@ -18,14 +18,14 @@ const WorkHead = () => {
 
     return (
         <div className={styles.workhead}>
-            <div className="col-12 col-md-6">
+            <div className="col-12 col-md-7">
                 <StyleRoot>
                 <video autoPlay muted loop className={styles.workvideo} style={animstyles.fadeInUp}>
                     <source src='/Media/workvideo.mp4' type="video/mp4" />
                 </video>
                 </StyleRoot>
             </div>
-            <div className="col-md-6 d-none d-md-block">
+            <div className="col-md-5 d-none d-md-block">
 
                 <div className={styles.workheadtitle}>
 

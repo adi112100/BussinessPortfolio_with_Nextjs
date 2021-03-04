@@ -81,25 +81,25 @@ const Aboutusmain = () => {
                     <div className="row">
                         <AboutusCarousel />
                     </div>
-                    <br /><br /><br />
+                    <div style={{marginTop:'150px'}}></div>
                     <div className="row">
                         <div className={styles.cardalign}>
                             <Fade bottom>
-                                <AboutusCard title='UI/UX design'
-                                    body='Don’t rely on imagination only. We can picture your product before it comes to life.'
-                                    path='Media/card1.svg' />
                                 <AboutusCard title='Server Deployment and DevOps'
                                     body='Don’t rely on imagination only. We can picture your product before it comes to life.'
                                     path='Media/card2.svg' />
+                                <AboutusCard title='UI/UX design'
+                                    body='Don’t rely on imagination only. We can picture your product before it comes to life.'
+                                    path='Media/card1.svg' />
                                 <AboutusCard title='Software Engineering'
                                     body='Don’t rely on imagination only. We can picture your product before it comes to life.'
                                     path='Media/card3.svg' />
                             </Fade>
                         </div>
                     </div>
-                    <br /><br /><br />
+                    <div style={{marginTop:'150px'}}></div>
                     <div className="row">
-                        <h1 style={{ textAlign: 'center', color: '#FF9600' }}>Our Team</h1>
+                        <h1 style={{ textAlign: 'center', color: '#FF9600', fontSize:'60px' }}>Our Team</h1>
                         <Fade>
                             <div className={styles.profilealign} >
                                 <AboutusProfile
