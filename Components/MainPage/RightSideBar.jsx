@@ -25,7 +25,7 @@ const RightSideBar = () => {
                                 </h1>
                                 <br />
 
-                                <h1>Want To Know About Us ? <br />
+                                <h1>Want To Know About Us ?<br />
                                     <div className={styles.navlink_rightside}>
                                         <Link href='/about'> Click here </Link>
                                         <FontAwesomeIcon icon={faLocationArrow} style={{ color: 'black' }} /> </div>
