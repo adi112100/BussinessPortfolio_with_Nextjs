@@ -1,11 +1,10 @@
 import React from 'react'
-
 import styles from '../../styles/Work.module.css'
 
-const Worktemplate = () => {
+const Worktemplate = (props) => {
     return (
         <div className={styles.worktemplate_container}>
-            aaa
+           {JSON.stringify(props.data)}
         </div>
     )
 }
