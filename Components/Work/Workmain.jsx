@@ -16,10 +16,10 @@ const Workmain = () => {
     for (let i = 0; i < Length; ++i) swiperSlide.push(<SwiperSlide key={i}><Worktemplate data = {projectJSON[i]}/></SwiperSlide>)
 
     return (
-        <div className='col'>
+        <div className='col' style={{padding:0}}>
             <div className={styles.worktitle}>  Our Work  <span> {`< swipe >`} </span> </div>
             <Swiper
-                spaceBetween={1}
+                spaceBetween={0}
                 slidesPerView={1}
                 navigation
                 pagination={{ clickable: true }}

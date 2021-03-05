@@ -94,4 +94,99 @@
     width: 100vw;
     padding: 0;
     background-color: white;
+    padding-top: 50px;
+    padding-right: 20px;
 }
+
+.project_title_desktop{
+    text-align: left;
+    font-size: 60px;
+    font-weight: 610;
+
+}
+
+.project_header_desktop{
+    padding-top: 40px;
+}
+
+.flex_header_item{
+    text-align: right;
+    padding: 0px 20px 0px 20px;
+    font-size: medium;
+}
+
+.flex_header_item p{
+    padding: 0;
+    margin-bottom: -15px;
+    color: #392f94;
+    font-size: larger;
+    font-weight: 500;
+}
+
+.project_main_desktop{
+    height: 90vh;
+    border-radius: 50px 50px 0px 0px;
+    margin-top: 30px;
+    color: white;
+    padding: 20px;
+}
+
+.project_mainleft_desktop{
+    padding-top: 50px;
+    border-radius: 50px;
+    background-color:#89bfe5;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.project_mainleft_desktop h3{
+    font-size: 60px;
+}
+
+.project_mainleft_desktop p{
+    font-size: 25px;
+}
+
+.project_image_container{
+
+    padding: 30px;
+    height: 100vh;
+    overflow: hidden;
+    border-radius: 50px;
+}
+
+.project_image{
+    animation: verticalscroll ease-in 45s alternate-reverse infinite;
+}
+
+@keyframes verticalscroll{
+    0%{
+        margin-top: 0px;
+    }
+    100%{
+        margin-top: -4500px;
+    }
+}
+
+.project_image img{
+    border-radius: 50px;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+@media (max-width:1000px) {
+    
+    .project_title_desktop{
+        font-size: 40px;
+    }
+    
+    .flex_header_item{
+        font-size: smaller;
+    }
+    
+    .project_mainleft_desktop{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
