@@ -46,6 +46,17 @@ export const projectJSON = [
         technologies: 'HTML, CSS, JS',
         year: '2018-19'
 
+    },
+    {
+        id : 4,
+        title : 'Technical Lead',
+        description : <>Working on an Enterprise Project having ReactJS in the frontend and NodeJS at the backend. The mobile application was developed in Flutter. <br/><br/>The role requires to design entire architecture and data flow.</>,
+        images : ['p4/p1.jpg','p4/p2.jpg','p4/p3.jpg','p4/p4.jpg','p4/p5.jpg'],
+        industry: 'Shell Desae and Partners',
+        platform: 'web mobile',
+        technologies: 'Reactjs, Flutter, Nodejs',
+        year: '2020'
+
     }
     
 
