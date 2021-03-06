@@ -161,13 +161,14 @@
 
 @keyframes verticalscroll{
     0%{
-        margin-top: 0px;
+        /* margin-top: 0px; */
+        -webkit-transform: translateY(0%);
     }
     100%{
-        margin-top: -4000px;
+        /* margin-top: -4000px; */
+        -webkit-transform: translateY(-100%);
     }
 }
-
 .project_image img{
     border-radius: 50px;
     width: 100%;
@@ -249,10 +250,12 @@
 
 @keyframes verticalscroll1{
     0%{
-        margin-top: 0px;
+        /* margin-top: 0px; */
+        -webkit-transform: translateY(0%);
     }
     100%{
-        margin-top: -4000px;
+        /* margin-top: -4000px; */
+        -webkit-transform: translateY(-100%);
     }
 }
 
