@@ -3,12 +3,12 @@ import React from 'react'
 import styles from '../../styles/Work.module.css'
 import {Length, projectJSON} from '../../Data/ProjectJSON.js'
 
-import SwiperCore, { Navigation, Pagination, A11y, EffectFade, EffectCube} from 'swiper';
+import SwiperCore, { Navigation, Pagination, A11y, EffectCoverflow} from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import Worktemplate from './Worktemplate';
 
-SwiperCore.use([Navigation, Pagination, A11y]);
+SwiperCore.use([Navigation, Pagination, A11y, EffectCoverflow]);
 
 const Workmain = () => {
 
@@ -24,8 +24,9 @@ const Workmain = () => {
                 slidesPerView={1}
                 navigation
                 pagination={{ clickable: true }}
-                effect="cube"
-                cubeEffect
+                effect= "coverflow"
+                
+                
             // onSlideChange={() => console.log('slide change')}
             // onSwiper={(swiper) => console.log(swiper)}
             >
