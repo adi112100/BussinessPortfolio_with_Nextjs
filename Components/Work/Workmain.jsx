@@ -3,8 +3,9 @@ import React from 'react'
 import styles from '../../styles/Work.module.css'
 import {Length, projectJSON} from '../../Data/ProjectJSON.js'
 
-import SwiperCore, { Navigation, Pagination, A11y } from 'swiper';
+import SwiperCore, { Navigation, Pagination, A11y, EffectFade, EffectCube} from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
+
 import Worktemplate from './Worktemplate';
 
 SwiperCore.use([Navigation, Pagination, A11y]);
@@ -23,7 +24,8 @@ const Workmain = () => {
                 slidesPerView={1}
                 navigation
                 pagination={{ clickable: true }}
-
+                effect="cube"
+                cubeEffect
             // onSlideChange={() => console.log('slide change')}
             // onSwiper={(swiper) => console.log(swiper)}
             >

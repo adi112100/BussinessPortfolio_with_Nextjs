@@ -17,29 +17,30 @@ const RightSideBar = () => {
                     <Fade left>
                         <div className={styles.rightsidecontent}>
                             <div className={animation.vertical_scrolleffect} >
+
+                                <h1>Hey There We Are Passionate Developers!!</h1>
+
                                 <h1>Look at our past work!!! <br />
                                     <div className={styles.navlink_rightside}>
                                         <Link href='/work'> Click here </Link>
                                         <FontAwesomeIcon icon={faLocationArrow} style={{ color: 'black' }} />
                                     </div>
                                 </h1>
-                                <br />
+                               
 
                                 <h1>Want To Know About Us ?<br />
                                     <div className={styles.navlink_rightside}>
                                         <Link href='/about'> Click here </Link>
                                         <FontAwesomeIcon icon={faLocationArrow} style={{ color: 'black' }} /> </div>
                                 </h1>
-                                <br />
-
-                                <h1>Hey There We Are Passionate Developers!!</h1>
+                              
 
                                 <h1> Feel Free to ContactUs !! <br />
                                     <div className={styles.navlink_rightside}>
                                         <Link href='/contactus'> Click here </Link>
                                         <FontAwesomeIcon icon={faLocationArrow} style={{ color: 'black' }} /> </div>
                                 </h1>
-                                <br />
+                               
 
                             </div>
                         </div>

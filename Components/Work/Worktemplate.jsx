@@ -5,11 +5,10 @@ import Fade from 'react-reveal/Fade';
 
 const Worktemplate = ({ data }) => {
     let imagestack = []
-    for (let i=1; i<=4; ++i)
-    {
-        for (let j = 0; j < data.images.length; ++j) imagestack.push(<img key={10*i + j} src={data.images[j]} className='shadow-lg' />)
+    for (let i = 1; i <= 4; ++i) {
+        for (let j = 0; j < data.images.length; ++j) imagestack.push(<img key={10 * i + j} src={data.images[j]} className='shadow-lg' />)
     }
-   
+
 
     return (
         <div className={styles.worktemplate_container}>
@@ -48,26 +47,27 @@ const Worktemplate = ({ data }) => {
                     </Fade>
                 </div>
 
-                <Fade left>
-                    <div className={`row ${styles.project_main_desktop}`}>
-                        <div className={`col-md-7 col-xl-6 shadow-lg ${styles.project_mainleft_desktop}`}>
+
+                <div className={`row ${styles.project_main_desktop}`}>
+                    <Fade left>
+                        <div className={`col-md-7 col-xl-7 shadow-lg ${styles.project_mainleft_desktop}`}>
                             <h3>Description</h3>
                             <br /><br />
                             <p>{data.description}</p>
                         </div>
-                        <div className="col-md-5 col-xl-6">
+                    </Fade>
+                    <Fade bottom>
+                        <div className="col-md-5 col-xl-5">
                             <div className={styles.project_image_container}>
                                 <div className={styles.project_image}>
                                     {imagestack}
                                 </div>
-
                             </div>
-
-
                         </div>
+                    </Fade>
 
-                    </div>
-                </Fade>
+                </div>
+
 
 
             </div>
@@ -76,6 +76,61 @@ const Worktemplate = ({ data }) => {
 
             <div className="d-md-none container-fluid">
                 {/* hide on medium and wider screens */}
+                
+                <Fade bottom>
+                    <div className="row">
+                        <div className="col-12">
+                        <h1 className={styles.project_title_mobile}>{data.title}</h1>
+                        </div>
+                       
+                    </div>
+                </Fade>
+
+                <div className={`row ${styles.project_header_mobile}`}>
+                    <Fade bottom>
+                        <div className="col-12" style={{marginBottom:'20px'}}>
+                            <h3>For <span style={{ color: '#392f94' }}>{data.industry}</span></h3>
+                        </div>
+                    </Fade>
+                    <Fade right>
+                        <div className="col-12 shadow-lg"
+                            style=
+                            {{
+                                display: 'flex', justifyContent: 'space-evenly', flexWrap: 'wrap', padding: '30px 0px 30px 0px', borderRadius: '50px',
+                                height:'100px', overflow:'scroll'
+                            }}>
+                            <div className={styles.flex_header_item_mobile}>
+                                <p>Platform</p><br />{data.platform}
+                            </div>
+                            <div className={styles.flex_header_item_mobile}>
+                                <p>Technologies</p><br />{data.technologies}
+                            </div>
+                            <div className={styles.flex_header_item_mobile}>
+                                <p>Year</p><br />{data.year}
+                            </div>
+                        </div>
+                    </Fade>
+                </div>
+
+                <div className={`row ${styles.project_main_mobile}`}>
+                <Fade bottom>
+                        <div className="col-12">
+                            <div className={styles.project_image_container_mobile}>
+                                <div className={styles.project_image_mobile}>
+                                    {imagestack}
+                                </div>
+                            </div>
+                        </div>
+                    </Fade>
+                    <Fade left>
+                        <div className={`col-12 shadow-lg ${styles.project_desc_mobile}`}>
+                            <h3>Description</h3>
+                            <br /><br />
+                            <p>{data.description}</p>
+                        </div>
+                    </Fade>
+
+                </div>
             </div>
 
         </div>
