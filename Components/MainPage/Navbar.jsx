@@ -18,7 +18,7 @@ const Navbar = () => {
     // }
 
     const [toggle, setToggle] = useState(0);
-
+    
     const togglevalue = () => {
 
         if (toggle === 0) setToggle(1)
@@ -33,6 +33,7 @@ const Navbar = () => {
                     <Link href='/about'><p className={styles.navlink}>ABOUT US</p></Link>
                     <Link href='/work'><p className={styles.navlink}>WORK</p></Link>
                     <Link href='/contactus'><p className={styles.navlink}>CONTACT US</p></Link>
+                    <Link href='/blog'><p className={styles.navlink}>BLOG</p></Link>
                 </div>
             </div>
             <div className="d-lg-none">
@@ -59,6 +60,7 @@ const Navbar = () => {
                                                 display: 'flex',
                                                 flexDirection: 'column',
                                                 alignItems: 'center',
+                                                justifyContent: 'center',
                                                 padding: '20px',
                                                 color: 'white',
                                                 fontSize: '6vw',
@@ -73,6 +75,7 @@ const Navbar = () => {
                                                     <Link href='/about'><p>ABOUT US</p></Link>
                                                     <Link href='/work'><p>WORK</p></Link>
                                                     <Link href='/contactus'><p>CONTACT US</p></Link>
+                                                    <Link href='/blog'><p>BLOG</p></Link>
                                                 </Fade>
                                             </div>
                                         </Flip>

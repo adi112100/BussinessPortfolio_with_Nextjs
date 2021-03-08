@@ -19,12 +19,21 @@ export default function Home() {
 
       <div className="container-fluid">
         <div className="row">
-          <div className="col-12 col-lg-7">
+          <div className="col-12 col-lg-6">
             <Title/>
+          </div>
+          <div className="col-12 col-lg-6">
+            <Navbar/>
+          </div>
+        </div>
+      </div>
+      
+      <div className="container-fluid">
+        <div className="row">
+          <div className="col-12 col-lg-7">
             <LeftSideBar/>
           </div>
           <div className="col-12 col-lg-5">
-            <Navbar/>
             <RightSideBar/>
           </div>
         </div>
