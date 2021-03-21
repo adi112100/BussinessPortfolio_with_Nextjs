@@ -50,14 +50,14 @@ const Worktemplate = ({ data }) => {
 
                 <div className={`row ${styles.project_main_desktop}`}>
                     <Fade left>
-                        <div className={`col-md-7 col-lg-6 col-xl-3 shadow-lg ${styles.project_mainleft_desktop}`}>
+                        <div className={`col-md-6 col-lg-6 col-xl-3 shadow-lg ${styles.project_mainleft_desktop}`}>
                             <h3>Description</h3>
                             <br /><br />
                             <p>{data.description}</p>
                         </div>
                     </Fade>
                     <Fade bottom>
-                        <div className="col-md-5 col-lg-6 col-xl-9">
+                        <div className="col-md-6 col-lg-6 col-xl-9">
                             <div className={styles.project_image_container}>
                                 <div className={styles.project_image}>
                                     {imagestack}
