@@ -116,14 +116,31 @@
 /* Contactus end */
 
 .contactusend{
-    height: 30vh;
+    height: 45vh;
     margin-top: 20px;
 }
 
 .footeralign{
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
     margin-top: 10vh;
+    flex-wrap: nowrap;
+}
+
+.linkgroup{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.contactinfo{
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
 }
 
 .navlink {
@@ -143,10 +160,22 @@
     background-position: 0 100%;
 }
 
+.sociallink{
+    transition-duration: 200ms;
+}
+
+.sociallink:hover{
+    color:white;
+    transition-duration: 400ms;
+}
+
 @media screen and (min-width: 1000px) {
 
     .footeralign{
         font-size: 4vw;
+    }
+    .contactinfo{
+        font-size: 2vw;
     }
 }
 
@@ -155,13 +184,16 @@
     .footeralign{
         font-size: 6vw;
     }
+    .contactinfo{
+        font-size: 3vw;
+    }
 
 }
 
 @media screen and (max-width: 760px) {
 
     .footeralign{
-        font-size: 7vw;
+        font-size: 5vw;
     }
 
 }

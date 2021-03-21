@@ -133,14 +133,15 @@
 
 .project_mainleft_desktop{
     padding-top: 50px;
-    border-radius: 50px;
+    /* border-radius: 50px; */
     background-color:#392f94;
     padding-left: 30px;
     padding-right: 30px;
+    
 }
 
 .project_mainleft_desktop h3{
-    font-size: 60px;
+    font-size: 50px;
 }
 
 .project_mainleft_desktop p{
@@ -156,7 +157,7 @@
 }
 
 .project_image{
-    animation: verticalscroll 40s linear alternate-reverse infinite;
+    animation: verticalscroll 80s linear alternate-reverse infinite;
 }
 
 @keyframes verticalscroll{
